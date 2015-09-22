@@ -1,0 +1,82 @@
+\setlength{\columnsep}{2em}
+\begin{multicols}{2}
+
+\subsubsection*{Zwischen Hauptmieter*in}
+
+\ifthenelse{\equal{\HAUPTMIETERlastname}{}}
+{}
+{Name \MYdotfill \textbf{ \HAUPTMIETERlastname }\newline} 
+%
+\ifthenelse{\equal{\HAUPTMIETERfirstname}{}}
+{}
+{Vorname \MYdotfill \textbf{ \HAUPTMIETERfirstname }\newline} 
+%
+\ifthenelse{\equal{\HAUPTMIETERstreet}{}}
+{}
+{Straße \MYdotfill \textbf{ \HAUPTMIETERstreet~\HAUPTMIETERstreetnumber }\newline} 
+%
+\ifthenelse{\equal{\HAUPTMIETERzipcode}{}}
+{}
+{PLZ \MYdotfill \textbf{ \HAUPTMIETERzipcode }\newline} 
+%
+\ifthenelse{\equal{\HAUPTMIETERcity}{}}
+{}
+{Stadt \MYdotfill \textbf{ \HAUPTMIETERcity }\newline} 
+%
+\ifthenelse{\equal{\HAUPTMIETERphone}{}}
+{}
+{Telefon \MYdotfill \textbf{ \HAUPTMIETERphone }\newline} 
+%
+\ifthenelse{\equal{\HAUPTMIETERmobile}{}}
+{}
+{Mobil \MYdotfill \textbf{ \HAUPTMIETERmobile }\newline} 
+%
+\ifthenelse{\equal{\HAUPTMIETERmail}{}}
+{}
+{Email \MYdotfill \textbf{ \HAUPTMIETERmail }\newline} 
+%
+\ifthenelse{\equal{\HAUPTMIETERjob}{}}
+{}
+{Beruf \MYdotfill \textbf{ \HAUPTMIETERjob }\newline} 
+
+\columnbreak
+
+\subsubsection*{und Untermieter*in}
+
+\ifthenelse{\equal{\MIETERlastname}{}}
+{}
+{Name \MYdotfill \textbf{ \MIETERlastname }\newline} 
+%
+\ifthenelse{\equal{\MIETERfirstname}{}}
+{}
+{Vorname \MYdotfill \textbf{ \MIETERfirstname }\newline} 
+%
+\ifthenelse{\equal{\MIETERstreet}{}}
+{}
+{Straße \MYdotfill \textbf{ \MIETERstreet~\MIETERstreetnumber }\newline} 
+%
+\ifthenelse{\equal{\MIETERzipcode}{}}
+{}
+{PLZ \MYdotfill \textbf{ \MIETERzipcode }\newline} 
+%
+\ifthenelse{\equal{\MIETERcity}{}}
+{}
+{Stadt \MYdotfill \textbf{ \MIETERcity }\newline} 
+%
+\ifthenelse{\equal{\MIETERphone}{}}
+{}
+{Telefon \MYdotfill \textbf{ \MIETERphone }\newline} 
+%
+\ifthenelse{\equal{\MIETERmobile}{}}
+{}
+{Mobil \MYdotfill \textbf{ \MIETERmobile }\newline} 
+%
+\ifthenelse{\equal{\MIETERmail}{}}
+{}
+{Email \MYdotfill \textbf{ \MIETERmail }\newline} 
+%
+\ifthenelse{\equal{\MIETERjob}{}}
+{}
+{Beruf \MYdotfill \textbf{ \MIETERjob }\newline} 
+
+\end{multicols}

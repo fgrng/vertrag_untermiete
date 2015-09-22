@@ -1,0 +1,70 @@
+% ---------------------------------------------------------------------
+% --- Header ----------------------------------------------------------
+% ---------------------------------------------------------------------
+
+% --- Include Header files
+
+\input{header/head_base.tex}
+\input{header/head_typo.tex}
+\input{header/head_item.tex}
+
+\setlength\parindent{0pt}
+
+\makeatletter
+\newcommand \MYdotfill {{\color{gray} \leavevmode \cleaders \hb@xt@ .33em{\hss .\hss }\hfill \kern \z@}}
+\makeatother
+
+% --- Document data
+
+\title{Untermietvertrag}
+\author{}
+\date{\today}
+
+% --- Daten Mietvertrag
+
+\input{content/data.tex}
+
+% ---------------------------------------------------------------------
+% --- Document --------------------------------------------------------
+% ---------------------------------------------------------------------
+
+\begin{document}
+
+\fancyfoot[C]{\footnotesize{\thepage}}
+
+{\Huge \textsc{Untermietvertrag}}
+
+\vspace{2cm}
+
+% --- Persönliche Daten -----------------------------------------------
+
+\input{content/person_info.tex}
+\vspace{-6ex}
+\input{content/base.tex}
+
+% --- Vertrag ---------------------------------------------------------
+
+\pagebreak
+\renewcommand{\headrulewidth}{0.4pt}
+\input{content/contract.tex}
+
+% --- Sonstige Vereinbarungen -----------------------------------------
+
+\pagebreak
+\input{content/appendix}
+
+% --- Notizen ---------------------------------------------------------
+
+\pagebreak
+\fancyfoot[C]{}
+\input{content/notes}
+
+% --- Einverständnis Untervermietung ----------------------------------
+
+\pagebreak
+\renewcommand{\headrulewidth}{0.0pt}
+\input{content/consent}
+
+% ---------------------------------------------------------------------
+
+\end{document}

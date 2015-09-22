@@ -1,0 +1,58 @@
+% =====================================================================
+% === LaTeX Header: Koma Article  =====================================
+% =====================================================================
+% ---
+% ---
+% ---
+
+% === Typografie & Typeface  ==========================================
+
+% --- Microtype!
+
+\usepackage[
+  expansion=true,
+  protrusion=true
+]
+{microtype}
+
+% --- Lines, Paragraphs
+
+\usepackage[onehalfspacing]{setspace}
+\setlength{\parindent}{1em}%{3ex}
+\setlength{\parskip}{0ex}%{2ex}
+\setlength{\parfillskip}{1em plus .75\textwidth}%{3ex}
+
+% --- Typeface
+
+\usepackage[largesmallcaps]{kpfonts}
+
+% - Koma Faces
+% \setkomafont{chapter}{\normalfont\Huge\bf}
+\setkomafont{section}{\normalfont\huge\bf}
+\setkomafont{subsection}{\normalfont\Large\bf}
+\setkomafont{subsubsection}{\normalfont\large\bf}
+\setkomafont{paragraph}{\normalfont\sc}
+
+% --- Tables
+
+\usepackage{booktabs}
+
+% --- Notes
+
+\usepackage[
+   bottom,      % Footnotes appear always on bottom. This is necessary
+                % especially when floats are used
+   stable,      % Make footnotes stable in section titles
+   perpage,     % Reset on each page
+   %para,       % Place footnotes side by side of in one paragraph.
+   %side,       % Place footnotes in the margin
+   ragged,      % Use RaggedRight
+   %norule,     % suppress rule above footnotes
+   multiple,    % rearrange multiple footnotes intelligent in the text.
+   %symbol,     % use symbols instead of numbers
+]{footmisc}
+
+\deffootnote{1.5em}{1em}{\makebox[1.5em][l]{\thefootnotemark}}
+\addtolength{\skip\footins}{\baselineskip}
+\setlength{\dimen\footins}{10\baselineskip}
+\interfootnotelinepenalty=10000

@@ -1,0 +1,45 @@
+% =====================================================================
+% === LaTeX Header: Itemize & Enumerate ===============================
+% =====================================================================
+% ---
+% ---
+% ---
+
+% === Packages ========================================================
+
+\usepackage{enumitem} 
+
+% === Styles: Itemize =================================================
+
+\setlist[itemize]{
+  align=right,
+  % Vertical spacing
+  itemsep=0em,
+  % Horizontal spacing
+  listparindent=0em,
+  % ---
+  leftmargin=!, % +
+  itemindent=0em,
+  % =
+  labelindent=0.5ex, % +
+  labelwidth=*, % +
+  labelsep*=1ex, % +
+}
+
+% === Styles: Enumerate =================================================
+
+\setlist[enumerate]{
+  label=\textup{(\roman*)},
+  align=right,
+  % Vertical spacing
+  itemsep=0em,
+  % Horizontal spacing
+  listparindent=0em,
+  % ---
+  leftmargin=!, % +
+  itemindent=0em,
+  % =
+  labelindent=0.5ex, % +
+  labelwidth=2em, % +
+  labelsep*=1ex, % +
+}
